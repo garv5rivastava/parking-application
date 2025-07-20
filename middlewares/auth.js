@@ -10,8 +10,8 @@ const auth = async(req, res, next) => {
             _id: decoded._id,
         })
 
-        if(!user) {
-            throw new Error('Unable tp login, Invalid credentials');
+        if(!user) {    
+            throw new Error('Unable to login, Invalid credentials');
         }
 
         req.user = user;
