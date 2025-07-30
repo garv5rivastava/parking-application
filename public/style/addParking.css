@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #00adb5;
+}
+
+nav .hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+nav .nav-menu {
+  position: absolute;
+  top: 60px;
+  right: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+
+nav .nav-menu.open {
+  display: flex;
+}
+
+nav .nav-menu a {
+  color: #00fff7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav .nav-menu p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form-container {
+  z-index: 1;
+  max-width: 400px;
+  margin: 16vh auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(0, 255, 225, 0.2);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00ffe1;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+form input, form textarea {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  background-color: #00adb5;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00adb5;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0099a8;
+  box-shadow: 0 0 25px #00fff7;
+}

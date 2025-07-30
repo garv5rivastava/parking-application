@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Parking Space | UrbanBay</title>
+  <link rel="stylesheet" href="style/addParking.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">UrbanBay</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="nav-menu" id="navMenu">
+      <p id="userGreeting">Hello, Guest</p>
+      <a href="#" id="logoutBtn">Logout</a>
+    </div>
+  </nav>
+
+  <video autoplay muted loop id="bgVideo">
+    <source src="assets/background 02.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="background-overlay"></div>
+
+  <div class="form-container">
+    <h1>Add a Parking Spot</h1>
+    <form id="parkingForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="number" id="pricePerHour" placeholder="Price Per Hour (₹)" />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <button id="getLocation">Add Location</button>
+      <button type="submit">Add Parking Spot</button>
+    </form>
+  </div>
+
+  <script src="scripts/addParking.js"></script>
+</body>
+</html>

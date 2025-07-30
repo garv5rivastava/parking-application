@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanBay | Login</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="bgVideo" class="video-background">
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">UrbanBay</div>
+            <div class="nav-links">
+                <a href="#home">Home</a></li>
+                <a href="#features">Features</a></li>
+                <a href="#how-it-works">How It Works</a></li>
+                <a href="#pricing">Pricing</a></li>
+                <a href="#contact">Contact</a></li>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <!-- <div class="upper-heading">
+            <h1>Find Parking Anywhere, <span>Anytime</span></h1>
+            <p class="hero-description">
+                Connect with parking space owners and discover available spots near you. 
+                Turn your unused space into income by listing it on our platform.
+            </p>
+        </div> -->
+        
+         <!-- <div class="login-section">
+            <div class="form-box">
+                <h1>Welcome to <span>UrbanBay</span></h1>
+                <form id="loginForm">
+                    <input type="email" id="email" placeholder="Email" required />
+                    <input type="password" id="password" placeholder="Password" required />
+                    <button type="submit">Login</button>
+
+                    <p class="signup-text">
+                        Don't have an account? <a href="signup.html">Create Account</a>
+                </form>
+            </div>
+        </div> -->
+
+        
+        <div class="image-section">
+            <video autoplay muted loop id="bgVideo">
+                <source src="assets/background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="background-overlay"></div>
+        </div>
+    </div>
+
+
+    <!--  Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="upper-heading">
+                <h1>Find Parking Anywhere, <span>Anytime</span></h1>
+                <p class="hero-description">
+                    Connect with parking space owners and discover available spots near you. 
+                    Turn your unused space into income by listing it on our platform.
+                </p>
+            </div>
+            <div class="login-section">
+            <div class="form-box">
+                <h1>Welcome to <span>UrbanBay</span></h1>
+                <form id="loginForm">
+                    <input type="email" id="email" placeholder="Email" required />
+                    <input type="password" id="password" placeholder="Password" required />
+                    <button type="submit">Login</button>
+
+                    <p class="signup-text">
+                        Don't have an account? <a href="signup.html">Create Account</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span>UrbanBay</span></h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>Smart Search</h3>
+                    <p>Find available parking spaces near your destination with real-time updates and accurate pricing information.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Earn Money</h3>
+                    <p>List your unused parking space and generate passive income. Perfect for homeowners, businesses, and property managers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>All transactions are protected with secure payment processing and comprehensive insurance coverage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Ready</h3>
+                    <p>Access our platform anywhere with our responsive design and upcoming mobile applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It <span>Works</span></h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('parker')">For Parkers</button>
+                    <button class="tab-btn" onclick="switchTab('owner')">For Space Owners</button>
+                </div>
+                
+                <div class="tab-content" id="parker-content">
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-icon"><i class="fas fa-search"></i></div>
+                            <h4>Search & Discover</h4>
+                            <p>Enter your destination and browse available parking spaces with photos, prices, and reviews.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+                            <h4>Book & Pay</h4>
+                            <p>Reserve your spot instantly with secure payment. Get confirmation and access details immediately.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-icon"><i class="fas fa-car"></i></div>
+                            <h4>Park & Go</h4>
+                            <p>Navigate to your reserved spot using our directions. Park with confidence and peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content hidden" id="owner-content">
+                    <div class="steps-grid">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-icon"><i class="fas fa-plus-circle"></i></div>
+                            <h4>List Your Space</h4>
+                            <p>Add your parking space with photos, set your price, and define availability hours.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-icon"><i class="fas fa-bell"></i></div>
+                            <h4>Receive Bookings</h4>
+                            <p>Get notified when someone books your space. Approve or decline requests as needed.</p>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-icon"><i class="fas fa-money-bill-wave"></i></div>
+                            <h4>Get Paid</h4>
+                            <p>Receive secure payments directly to your account. Track your earnings through our dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parking Types Section -->
+    <section class="parking-types">
+        <div class="container">
+            <h2 class="section-title">Perfect for <span>Every Space</span></h2>
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential</h3>
+                    <p>Driveways, garages, and private parking spaces at homes and apartments.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial</h3>
+                    <p>Office buildings, retail spaces, and business premises with extra parking capacity.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Healthcare</h3>
+                    <p>Hospitals, clinics, and medical facilities offering visitor parking solutions.</p>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Retail</h3>
+                    <p>Shopping malls, stores, and entertainment venues maximizing parking revenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15K+</div>
+                    <div class="stat-label">Parking Spaces</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Cities</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">User Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple <span>Pricing</span></h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>For Parkers</h3>
+                        <div class="price">Pay per use</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> No monthly fees</li>
+                        <li><i class="fas fa-check"></i> Competitive rates</li>
+                        <li><i class="fas fa-check"></i> Instant booking</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                        <li><i class="fas fa-check"></i> Secure payments</li>
+                    </ul>
+                    <button class="btn-primary">Start Parking</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>For Space Owners</h3>
+                        <div class="price">15% commission</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Free to list</li>
+                        <li><i class="fas fa-check"></i> Automated payments</li>
+                        <li><i class="fas fa-check"></i> Insurance included</li>
+                        <li><i class="fas fa-check"></i> Marketing support</li>
+                        <li><i class="fas fa-check"></i> Analytics dashboard</li>
+                    </ul>
+                    <button class="btn-primary">List Your Space</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <!-- <i class="fas fa-parking"></i> -->
+                        <span>UrbanBay</span>
+                    </div>
+                    <p>Making parking simple, accessible, and profitable for everyone in the community.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>For Parkers</h4>
+                    <ul>
+                        <li><a href="#">Find Parking</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Owners</h4>
+                    <ul>
+                        <li><a href="#">List Your Space</a></li>
+                        <li><a href="#">Earnings Calculator</a></li>
+                        <li><a href="#">Owner Resources</a></li>
+                        <li><a href="#">Insurance Info</a></li>
+                        <li><a href="#">Tax Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press & Media</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> work.garv.is@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 790*****33</p>
+                        <p><i class="fas fa-map-marker-alt"></i>3040, H-Block hostel, GLA University, Mathura</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 UrbanBay. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Login/Signup -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

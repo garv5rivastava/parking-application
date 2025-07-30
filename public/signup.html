@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | UrbanBay</title>
+    <link rel="stylesheet" href="style/signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- 🎥 Background Video -->
+    <video autoplay muted id="bgVideo">
+        <source src="assets/background03.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Optional: Dark Overlay -->
+    <div class="background-overlay"></div>
+
+    <!-- 📝 Signup Form (Centered) -->
+    <section class="signup-section">
+        <div class="form-box">
+            <h1><span>Urban</span>Bay - Sign Up</h1>
+            <form id="signupForm">
+                <input type="text" id="name" placeholder="Full Name" required />
+                <input type="tel" id="phone" placeholder="Mobile Number" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <button type="submit">Sign Up</button>
+                <p class="login-text">
+                    Already have an account? <a href="index.html">Login</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+<script src="scripts/signup.js"></script>
+</body>
+
+</html>
